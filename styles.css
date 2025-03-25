@@ -1,0 +1,77 @@
+:root {
+	--primary-color: #3498db;
+	--secondary-color: #2ecc71;
+	--background-color: #eeeff1;
+	--text-color: #1a1c20;
+	--link-color: #3498db;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Urbanist", sans-serif;
+	background-color: var(--background-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--link-color);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	height: 80px;
+	align-items: center;
+}
+
+.nav_left a {
+	color: var(--text-color);
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.nav_right a {
+	color: var(--text-color);
+	margin: 0 10px;
+}
+
+.nav_right a:last-child {
+	color: var(--background-color);
+	background-color: var(--text-color);
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.nav_right span {
+	margin-left: 10px;
+}
+
+@media (max-width: 801px) {
+	nav {
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.nav_right a {
+		font-size: 22px;
+	}
+
+	.nav_right a:last-child {
+		color: var(--text-color);
+
+		background-color: transparent;
+	}
+	.nav_right span {
+		display: none;
+	}
+}
