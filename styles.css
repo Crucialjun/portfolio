@@ -34,6 +34,45 @@ nav {
 	align-items: center;
 }
 
+#welcome {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	margin: 50px 0;
+	align-items:center;
+	gap: 40px;
+}
+
+#welcome .welcome_text h2 {
+	font-size: 45px;
+	
+}
+
+#welcome .welcome_text .links {
+	margin-top: 25px;
+}
+
+#welcome .welcome_text .links a {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid var(--link-color);
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#welcome .welcome_text .links a :hover {
+	color: var(--text-color);
+}
+
+#welcome .welcome_text {
+	flex: 5;
+}
+
+#welcome .profile_image {
+	flex: 2;
+}
+
 .nav_left a {
 	color: var(--text-color);
 	font-size: 22px;
@@ -55,6 +94,8 @@ nav {
 .nav_right span {
 	margin-left: 10px;
 }
+
+
 
 @media (max-width: 801px) {
 	nav {
