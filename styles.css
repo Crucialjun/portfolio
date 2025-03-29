@@ -321,8 +321,11 @@ nav {
 	}
 
 	.testimony-section .testimony-group {
-		flex-direction: column;
-		align-items: center;
+		grid-auto-flow: row;
+		grid-auto-columns: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		gap: 50px;
 	}
 
 	/* Contact Section */
