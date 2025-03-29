@@ -164,6 +164,30 @@ nav {
 	font-weight: 600;
 }
 
+/* Interest and Education Section */
+
+.education-intrests-section {
+	padding: 0 400px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.education-intrests-section h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.education-intrests-section .education li {
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.education-intrests-section .interests {
+	flex: 1;
+}
+
 /* TestimonySection */
 
 .testimony-section {
@@ -313,6 +337,12 @@ nav {
 
 	.skills-section .cells .cell span {
 		font-size: 16px;
+	}
+
+	/* Interest and Education Section */
+
+	.education-intrests-section {
+		padding: 0 20px;
 	}
 
 	/* Testimony Section */
