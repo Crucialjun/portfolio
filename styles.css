@@ -52,6 +52,7 @@ nav {
 	align-items: center;
 	gap: 40px;
 	margin: bottom 100px;
+	background: linear-gradient(90deg, hsla(35, 79%, 68%, 1) 0%, hsla(286, 44%, 49%, 1) 100%);
 }
 
 #welcome .welcome_text h2 {
@@ -192,6 +193,7 @@ nav {
 	border-radius: 20px;
 	width: 350px;
 	background-color: white;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
 	
 }
 
@@ -199,7 +201,7 @@ nav {
 .projects-section .projects-group .project-item img {
 	width: 100%;
 	height: 150px;
-	object-fit: contain;
+	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 
 }
@@ -207,15 +209,44 @@ nav {
 .projects-section .projects-group .project-item h3 {
 	font-size: 16px;
 	margin-bottom: 10px;
-	text-align: center;
+	margin-top: 10px;
+	padding-left: 24px;
+	
 }
+
+.projects-section .projects-group .project-item ul{
+	list-style: none;
+	padding: 0 24px;
+	margin-bottom: 10px;
+	display: flex;
+	gap: 10px;
+}
+.projects-section .projects-group .project-item ul li {
+	padding: 5px 10px;
+	background-color: var(--link-color);
+	color: var(--background-color);
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.projects-section .projects-group .project-item ul li:hover {
+	background-color: var(--text-color);
+	color: var(--background-color);
+}
+
+
+
+
+
 
 .projects-section .projects-group .project-item p {
 	font-size: 14px;
 	margin-bottom: 10px;
-	text-align: center;
-	padding: 0 10px;
+
+	padding: 0 24px;
 }
+
+
 
 
 
